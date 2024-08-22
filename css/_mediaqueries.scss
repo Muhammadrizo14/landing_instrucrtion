@@ -1,0 +1,64 @@
+@media (max-width: 700px) {
+  .container {
+    padding-top: 40px;
+  }
+  a {
+    display: block;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 95% !important;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .tag {
+    p {
+      font-size: 12px;
+    }
+  }
+  a {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  strong {
+    font-size: 16px;
+  }
+  .instruction {
+    padding: 10px !important;
+    strong,
+    a,
+    .bold-ol li {
+      font-size: 16px !important;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  ul,
+  ol {
+    li {
+      font-size: 16px;
+    }
+  }
+  .submit-btn {
+    font-size: 16px !important;
+  }
+
+  .images {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
