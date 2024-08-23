@@ -9,6 +9,13 @@
   font-family: "Geologica";
   src: url("../assets/fonts/Geologica_Auto-Regular.ttf") format("truetype");
   font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Geologica";
+  src: url("../assets/fonts/Geologica_Auto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
 }
 img {
   width: 100%;
@@ -17,7 +24,8 @@ img {
 p {
   font-size: 24px;
   font-weight: 400;
-  padding: 20px 0;
+  padding-bottom: 20px;
+  line-height: 33.6px;
 }
 
 h1 {
@@ -58,32 +66,110 @@ ol li {
 a {
   font-size: 24px;
   font-weight: 400;
+  color: #2875dd;
 }
 
 strong {
   font-size: 24px;
 }
 
+.swiper-slide img {
+  width: 100%;
+  max-width: 255px;
+  height: auto;
+}
+
+.swiper-slide {
+  width: auto;
+  max-width: 255px;
+}
+
+.text-link {
+  color: #555151;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: unset;
+}
+
+.slider {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  width: auto;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000; /* Customize the bullet color */
+  opacity: 0.5; /* Customize bullet opacity */
+}
+
 .swiper-pagination-bullet-active {
-  width: 30px;
+  width: 40px;
   border-radius: 10px;
+  background-color: #2875dd; /* Customize active bullet color */
+  opacity: 1; /* Customize active bullet opacity */
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+
+.pb-2 {
+  padding-bottom: 20px;
+}
+
+.pb-3 {
+  padding-bottom: 30px;
+}
+
+.pb-4 {
+  padding-bottom: 40px;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+
+.pt-2 {
+  padding-top: 20px;
+}
+
+.pt-3 {
+  padding-top: 30px;
+}
+
+.pt-4 {
+  padding-top: 40px;
 }
 
 .container {
-  max-width: 70%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding-top: 86px;
+  margin-top: 70px;
+  padding: 16px 5px;
+}
+.container .title {
+  max-width: 1080px;
+  line-height: 63px;
 }
 .container .video {
   width: 100%;
-  padding: 10px 0;
+  height: 470px;
+  border-radius: 30px;
+  max-width: 1080px;
+  margin-bottom: 30px;
+}
+.container .intoduction__image {
+  padding-bottom: 20px;
 }
 .container .tag {
-  padding: 8px;
+  padding: 8px 18px;
   background-color: #17b509;
   color: white;
-  font-size: 16px;
-  font-weight: 500;
   border-radius: 100px;
   width: -moz-fit-content;
   width: fit-content;
@@ -92,6 +178,7 @@ strong {
 }
 .container .tag p {
   padding: 0;
+  font-size: 16px;
 }
 .container .images {
   display: grid;
@@ -105,9 +192,15 @@ strong {
 .container .instruction {
   margin: 40px 0;
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 36px;
   color: rgb(85, 81, 81);
   background: rgb(245, 245, 245);
+}
+.container .instruction h2 {
+  font-size: 26px;
+}
+.container .instruction h4 {
+  font-size: 20px;
 }
 .container .instruction p {
   font-size: 20px;
@@ -121,6 +214,20 @@ strong {
 }
 .container .instruction strong a {
   text-decoration: none;
+}
+.container .instruction .screenshot {
+  padding: 30px 0;
+}
+.container .instruction-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .instruction__list {
+  margin-left: 0;
+}
+.container .instruction__list li {
+  list-style: none;
 }
 .container .second-instruction .reference {
   align-items: baseline;
@@ -140,7 +247,14 @@ strong {
   font-size: 24px;
   font-weight: bold !important;
 }
-.container .submit-btn {
+.container .instruction__submit h3 {
+  max-width: 1000px;
+}
+.container .instruction__submit p {
+  font-size: 30px;
+  line-height: 42px;
+}
+.container .instruction__submit .submit-btn {
   cursor: pointer;
   margin: 0 auto;
   border: 0;
@@ -150,7 +264,7 @@ strong {
   background: rgb(40, 117, 221);
   font-size: 30px;
   font-weight: 500;
-  max-width: 540px;
+  max-width: 570px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -163,18 +277,27 @@ strong {
   }
   a {
     display: block;
-    width: 80%;
-    text-overflow: ellipsis;
+    width: 70%;
+    word-break: break-all;
     overflow: hidden;
+  }
+  .swiper a {
+    width: auto !important;
+    margin: 0 auto;
   }
   .container {
     max-width: 95% !important;
   }
   h1 {
     font-size: 24px;
+    line-height: 33.6px !important;
+  }
+  h2 {
+    font-size: 22px !important;
   }
   p {
     font-size: 16px !important;
+    line-height: 22.4px;
   }
   .tag p {
     font-size: 12px;
@@ -195,24 +318,38 @@ strong {
     font-size: 16px;
   }
   .instruction {
-    padding: 10px !important;
+    padding: 20px !important;
+  }
+  .instruction a {
+    display: unset;
   }
   .instruction strong,
   .instruction a,
   .instruction .bold-ol li {
     font-size: 16px !important;
   }
-  .instruction h2 {
-    font-size: 20px;
+  .instruction h2,
+  .instruction h3,
+  .instruction h4 {
+    font-size: 16px !important;
+  }
+  .second-instruction h3 {
+    font-size: 20px !important;
   }
   ul li,
   ol li {
     font-size: 16px;
+  }
+  .instruction__submit p {
+    line-height: 28px !important;
   }
   .submit-btn {
     font-size: 16px !important;
   }
   .images {
     grid-template-columns: 1fr 1fr !important;
+  }
+  .video {
+    height: 199px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

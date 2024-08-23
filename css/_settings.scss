@@ -9,6 +9,14 @@
   font-family: "Geologica";
   src: url("../assets/fonts/Geologica_Auto-Regular.ttf") format("truetype");
   font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Geologica";
+  src: url("../assets/fonts/Geologica_Auto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
 }
 
 img {
@@ -18,7 +26,8 @@ img {
 p {
   font-size: 24px;
   font-weight: 400;
-  padding: 20px 0;
+  padding-bottom: 20px;
+  line-height: 33.6px;
 }
 
 h1 {
@@ -57,13 +66,49 @@ ol {
 a {
   font-size: 24px;
   font-weight: 400;
+  color: #2875dd;
 }
 
 strong {
   font-size: 24px;
 }
 
+.swiper-slide img {
+  width: 100%;
+  max-width: 255px;
+  height: auto;
+}
+
+.swiper-slide {
+  width: auto;
+  max-width: 255px;
+}
+
+.text-link {
+  color: #555151;
+  width: fit-content;
+  display: unset;
+}
+
+.slider {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  width: auto;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000; /* Customize the bullet color */
+  opacity: 0.5; /* Customize bullet opacity */
+}
+
 .swiper-pagination-bullet-active {
-  width: 30px;
+  width: 40px;
   border-radius: 10px;
+  background-color: #2875dd; /* Customize active bullet color */
+  opacity: 1; /* Customize active bullet opacity */
 }

@@ -4,18 +4,30 @@
   }
   a {
     display: block;
-    width: 80%;
-    text-overflow: ellipsis;
+    width: 70%;
+    word-break: break-all;
     overflow: hidden;
   }
+  .swiper {
+    a {
+      width: auto !important;
+      margin: 0 auto;
+    }
+  }
+
   .container {
     max-width: 95% !important;
   }
   h1 {
     font-size: 24px;
+    line-height: 33.6px !important;
+  }
+  h2 {
+    font-size: 22px !important;
   }
   p {
     font-size: 16px !important;
+    line-height: 22.4px;
   }
   .tag {
     p {
@@ -38,14 +50,25 @@
     font-size: 16px;
   }
   .instruction {
-    padding: 10px !important;
+    padding: 20px !important;
+    a {
+      display: unset;
+    }
     strong,
     a,
     .bold-ol li {
       font-size: 16px !important;
     }
-    h2 {
-      font-size: 20px;
+    h2,
+    h3,
+    h4 {
+      font-size: 16px !important;
+    }
+  }
+
+  .second-instruction {
+    h3 {
+      font-size: 20px !important;
     }
   }
   ul,
@@ -54,11 +77,19 @@
       font-size: 16px;
     }
   }
+  .instruction__submit {
+    p {
+      line-height: 28px !important;
+    }
+  }
   .submit-btn {
     font-size: 16px !important;
   }
 
   .images {
     grid-template-columns: 1fr 1fr !important;
+  }
+  .video {
+    height: 199px !important;
   }
 }
